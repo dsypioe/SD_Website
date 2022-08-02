@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>G5: Portable Field Radio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    /* Body  and header styling */
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+.center{margin-left:auto; margin-right: auto;}
+/* Table Styling */
+table, th, td {border: 1px solid black; height: 50px; width: 400px;}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <!-- <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a> -->
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Portable Field Radio Based on LIME Software-Defined Radio Receiver</h1>
+  <p class="w3-xlarge">Group 5</p>
+    <table sytle="width:100%" class="center">
+        <tr>
+            <th>Electrical Engineers</th>
+            <th>Computer Engineers</th>
+        </tr>
+        <tr>
+            <td>Brian Taylor</td>
+            <td>Elier Bermudes</td>
+        </tr>
+        <tr>
+            <td>Noah Madison</td>
+            <td>Daniel Sypioe</td>
+        </tr>
+
+        
+
+    </table>
+  <p class="w3-xlarge">University of Central Florida</p>
+  <p class="w3-xlarge">Dept. of Electrical Engineering and Computer Science</p>
+  <p class="w3-xlarge">University of Central Florida, Orlando, Florida, 32816-2450</p>
+
+
+
+  <!-- <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button> -->
+</header>
+
+<!-- Project Description Paragraph -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <!-- Create a class that will fill the rest of the container width -->
+      <div class="w3-rest">
+        <!-- Header -->
+        <h1>Project Description</h1>
+
+        <!-- Main Introductory Sentence -->
+        <h5 class="w3-padding-32">During Senior Design I & II we created a functional prototype of a portable software-defined field radio based on the LimeSDR,
+             an embedded system, as well as any necessary components that are required to complete a functional prototype</h5>
+        
+        <!-- Description Paragraph -->
+        <h5 class="w3-padding-32">The device will feature a speaker, microphone, and push to talk button which will enable the consumer to listen to their favorite 
+          AM/FM stations as well as communicate with others on FCC regulated wavelengths.  It will also feature a touch screen to visually display the necessary functions
+           and features of the radio.  This will include separate pages to access regular listening, communications, a waterfall display, a settings page, as well as a signal
+            bar on the right hand corner of the screen.  In the final stages of prototyping, measures will be taken to make the product water-resistant to sweat and mild water
+             droplets allowing the device to be taken outdoors without risk of damage due to weather or accidents.</h5>
+  
+             <h5 class="w3-padding-32">The most critical aspect of our device is the combination of our embedded system, radio receiver, and amplifier.
+               The Raspberry PI and Lime SDR must be integrated seamlessly and in a way that is computationally efficient in order to reduce any disruptions to service. 
+                The amplifier on the other hand must be selected carefully since a number of factors can affect its performance such as the input/output impedance, heat dissipation,
+                 and the type of filter it uses.</h5>
+      </div>
+  
+      
+    </div>
+  </div>
+  
+<!-- Sponsor Section -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Sponsor</h1> 
+      <h2>University of Central Florida Amature Radio Club</h2>
+      <p class="w3-text-grey">This project is funded up to $500 by the Amature Radio Club in hopes that we can not only develop the system but create one
+         that is easily accessible and upgradeable by the average entry-level Amature Radio enthusiast without the use of specialized components or software.
+           We hope to not only exceed the expectations of our sponsors and advisors with the final prototype but to create an affordable device that will encourage
+            generations of engineers of all backgrounds to enter the field of Amature Radio.
+    </p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <img src="assets/UCF_Logo.PNG" alt="Download Conference Paper">
+    </div>
+  </div>
+</div>
+
+<!-- Initial project description -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird w3-center">
+      <img src="assets/BlockDiagram.png">
+      <img src="assets/WorkDistro.PNG">
+    </div>
+
+    <div class="w3-third">
+      <h1>Initial Project Description & Block Diagram</h1>
+      
+      
+
+      <p class="w3-text-grey">The block diagram figure provides a generalized diagram of all of the features of the device and how they should interact at a hardware level.
+         The embedded system is further elaborated on in the upcoming sections. The battery control circuit, although necessary for the functionality of the system, will not be 
+         a part of the actual handheld and will be external to the system. This diagram in particular is for a high abstraction explanation of different features that will exist 
+         and how they are to interact with other project features and systems. It is not meant to be an exhaustive description of every component, but more of a summary.  
+         Provided below the figure is the legend which outlines the division of labor for this project in all stages including research, design, integration, prototyping, 
+         and development.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- EEL4914 Download Links -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>EEL 4914 - Senior Design I</h1>
+        <h5 class="w3-padding-32">During Senior Design I, we completed most of the necessary research and documentation needed to begin developing a prototype of the Field Radio.  
+          This encompassed tasks such as meeting with advisors and sponsors to ensure that the project was going smoothly and that all changes that needed to be made to the final
+          requirements were approved.  We also completed a virtual part comparison as well as an initial part selection.  As you will see in the CDR and final demonstrations, 
+          we did have to use upgraded major components due to the current parts shortage as well as having some parts fail due to unexpected overcurrent issues on the final day of testing.
+        </h5>
+  
+        <p class="w3-text-grey">To the right is a download link for the  documentation from Senior Design I.</p>
+      </div>
+  
+      <div class="w3-third w3-center">
+        <img src="assets/document_image.png" alt="Download Conference Paper">
+        <button class="btn"><i class="fa fa-download"></i><a href="assets/EEL 4914 Proceedings Paper.Group 5.pdf" download="G5_SD1_Documentation.pdf"> Download Report</a></button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- EEL 4915 CDR -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>EEL 4915 - CDR</h1>
+        <h5 class="w3-padding-32">During Senior Design II, we were tasked to create a CDR which </h5>
+  
+        <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+  
+      <div class="w3-third w3-center">
+        <img src="assets/video-play-button-white.png" alt="View Demo Video">
+        <button class="btn"><i class="fa fa-download"></i><a href="https://youtu.be/A_-Hy7Mq9FI" >View CDR Presentation</a></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- 8 Page Conference Paper -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>EEL 4915 - Conference Paper</h1>
+        <h5 class="w3-padding-32">This conference paper elaborates on the methodology and design implemented in order to develop a portable software-defined field radio 
+          based on the LimeSDR, an embedded system, as well as any necessary components that are required to complete a functional prototype.  
+        </h5>
+  
+        <p class="w3-text-grey">To the right is a download link for the 8 Page Conference Paper.</p>
+      </div>
+  
+      <div class="w3-third w3-center">
+        <img src="assets/document_image.png" alt="Download Conference Paper">
+        <button class="btn"><i class="fa fa-download"></i><a href="assets/8 page conference paper.docx.pdf" download="G5_Conference_Paper.pdf"> Download</a></button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Final Presentation -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>EEL 4915 - Final Presentation</h1>
+        <h5 class="w3-padding-32">We have succeeded in creating a portable system concept equipped with Lithium-Ion batteries with a charging circuit, 
+            an embedded system for radio receiver communications, simple TX/RX transmissions, and a fully functional touchscreen with audio I/O support.  We are currently
+             working on finalizing the development of our transmission protocols as well as constructing a GUI capable of being updated by our sponsors once the system is
+              delivered.Despite the numerous challenges we faced along the way ranging from trying different methods of remote software development, complications with
+               component testing, and getting RX/TX transmission set up; we were able to overcome most of our obstacles and what we could not we improvised and allowed
+                for slight changes in the overall requirements when new information was presented.  
+          </h5>
+  
+        <p class="w3-text-grey">To the right are links to the Final Demonstration Slides as well as the video presentation.</p>
+      </div>
+  
+      <div class="w3-third w3-center">
+        <img src="assets/document_image.png" alt="Download Demo Slides">
+        <button class="btn"><i class="fa fa-download"></i><a href="assets/Midterm Demo Redux.pptx" download="G5_Midterm_Demo.pptx"> Download Demo Slides</a></button>
+      </div>
+      <div class="w3-third w3-center">
+        <img src="assets/video-play-button-white.png" alt="View Demo Video">
+        <button class="btn"><i class="fa fa-download"></i><a href="https://www.youtube.com/watch?v=_k59_d49SXM" >View Presentation</a></button>
+      </div>
+    </div>
+  </div>
+
+ <!-- Download Links -->
+ <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>EEL 4914/4915 - Extras</h1>
+        <h5 class="w3-padding-32">To download all of the associated files for this project, please click the link to the right.</h5>
+      </div>
+  
+      <div class="w3-third w3-center">
+        <img src="assets/document_image.png" alt="Download Demo Slides">
+        <button class="btn"><i class="fa fa-download"></i><a href="assets/Midterm Demo Redux.pptx" download="G5_Midterm_Demo.pptx"> Download Demo Slides</a></button>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+
+  <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+</div>
+  
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
+
